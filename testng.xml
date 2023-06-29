@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parabnk Test Suti">
+	<listeners>
+		<listener class-name="utility.Mytransform"></listener>
+	</listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+     
+      <class name="test_pages.Login_Page_Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
