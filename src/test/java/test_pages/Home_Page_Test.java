@@ -4,12 +4,15 @@ import java.io.IOException;
 
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import base.Test_Base;
 import pages.Home_Page;
 import pages.Login_Page;
 import pages.OpenNew_Account;
+import utility.CustomListner;
+@Listeners(CustomListner.class)
 
 public class Home_Page_Test extends Test_Base {
 	Login_Page loginpage;
